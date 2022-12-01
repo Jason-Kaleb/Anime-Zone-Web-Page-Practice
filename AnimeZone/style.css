@@ -1,0 +1,29 @@
+*{
+    transition: all 0.3s ease-in-out;
+}
+.container{
+    clear: both;
+    overflow: auto;
+}
+nav{
+    float: right;
+}
+.logo{
+    float: left;
+    margin-left: 30px;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    font-family: raleway;
+    border-radius: 25px;
+}
+ul li:hover{
+    color: purple;
+    background-color: black;
+    text-transform: uppercase;
+}
+span{
+    color: purple;
+}

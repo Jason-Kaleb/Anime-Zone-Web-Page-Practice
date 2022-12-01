@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+}
+  
+  #top-pic{
+      height: 90vh;
+      background-image: url("R.gif");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+  
+   #nav {
+    background-color:white;
+    margin-left: -10px;
+    margin-top:-10px;
+    height:90px;
+}
+  
+  .myImg {
+      padding: 5px;
+      margin-top: 20px;
+      margin-left: 10px;
+  }
+  
+  #instagram:hover {
+    transform: scale(1.75);
+  }
+  
+  #twitter:hover {
+    transform: scale(1.75);
+  }
+  
+  #facebook:hover {
+    transform: scale(1.75);
+  }
+  
+  #hello {
+    margin-top: -48px;
+    margin-left: 100px;
+  }
+  
+  a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .label {
+        height: 45px;
+        margin: 10px;
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        float: right;
+        z-index: 120;
+      }
+      
+      .label div {
+        background-color: rgb(0, 0, 0);
+        float: right;
+        width: 40px;
+        height: 5px;
+        margin-top: 7px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        border-radius: 5px;
+      }
+    
+      #toggle1 {
+        display: none;
+      }
+      
+      input[type=checkbox]:checked + label .top {
+        transform: rotate(45deg) translate(-2px, -1px);
+        background:black;
+        margin-top: 30px;
+        padding: 0;
+        top: 0;
+        opacity: 1;
+        transition: all 0.7s ease-in-out;
+        }
+      
+      input[type=checkbox]:checked + label .meat {
+        transform: rotate(0deg) scale(0.2,0.2);
+        opacity: 0;
+      }
+      
+      input[type=checkbox]:checked + label .under {
+        padding: 0;
+        margin-top: -18px;
+        transform: rotate(-45deg) translate(0,-1px);
+        transition: all 0.7s ease-in-out;
+      }
+      
+      #toggle1:checked ~ .menu {
+        height: 380px;
+      }
+      
+      .menu {
+        background-color: black;
+        width: 10%;
+        display: -ms-grid;
+        display: grid;
+        float:right;
+        grid-template-rows: 1fr repeat(4, 0.5fr);
+        grid-row-gap: 25px;
+        padding: 0;
+        list-style: none;
+        clear: both;
+        text-align: center;
+        height: 0px;
+        overflow: hidden;
+        transition: height .4s ease;
+        z-index: 120;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+      
+      .menu a:first-child {
+        margin-top: 20px;
+      }
+      
+      .menu a:last-child {
+        margin-bottom: 40px;
+      }
+      
+      .link1 {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+      }
+      
+      .link1:hover {
+        background-color: red;
+        color: black;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+
+#myVid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

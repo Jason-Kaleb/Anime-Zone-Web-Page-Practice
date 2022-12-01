@@ -1,0 +1,140 @@
+/* Set Defaults */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Font And Size */
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+
+/* Shop Heading */
+.shop-heading{
+    display: flex;
+    justify-content: center;
+}
+.topText{
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+.topText h1{
+    padding: 20px;
+    font-size: 40px;
+}
+
+/* Shop Item Section */
+
+#shopItems{
+    height: 130vh;
+}
+#shopItems{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+/* Shop Item Cards */
+#shopItems .shop-item{
+    max-width: 400px;
+    height: 50vh;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin: 30px 10px;
+}
+.productImg{
+    width: 360px;
+    height: 300px;
+}
+#shopItems .shop-item h2{
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+#shopItems .shop-item p{
+    padding: 30px;
+    font-size: 18px;
+}
+
+/* Trolley */
+.trolley{
+    width: 50px;
+    position: relative;
+    bottom: -80px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.details{
+    height: 100px;
+}
+.cart{
+    position: fixed;
+    top: 50px;
+    left: 40%;
+    z-index: 2;
+    min-height: 200px;
+    max-height: 90vh;
+    width: 600px;
+    border-radius: 10px;
+    color: #333333;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 20px rgb(110, 108, 108);
+    display: none;
+    overflow: none;
+}
+.cart .top{
+    float: right;
+}
+.cart .top span{
+    padding: 20px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.cart .top span:hover{
+    transform: scale(1.5);
+}
+.cart .items{
+    min-height: 100px;
+    height: auto;
+    margin-top: 50px;
+}
+.cart .items ul{
+    list-style: none;
+}
+.cart .items ul li{
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    margin: 20px;
+}
+.cart .items ul li input{
+    width: 40px;
+}
+/* Cart Button */
+.btn{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
